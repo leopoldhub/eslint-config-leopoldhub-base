@@ -1,0 +1,34 @@
+{
+  "name": "eslint-config-leopoldhub-base",
+  "version": "1.0.0",
+  "description": "my personal javascript eslint configuration",
+  "main": "index.js",
+  "prettier": "prettier-config-leopoldhub",
+  "scripts": {
+    "check-prettier-conflicts": "eslint-config-prettier ./index.js",
+    "lint": "prettier --write . --loglevel error && prettier --check . --loglevel error && eslint ."
+  },
+  "exports": {
+    ".": "./index.js",
+    "./rules/env": "./rules/env.js",
+    "./rules/warnings": "./rules/warnings.js",
+    "./rules/errors": "./rules/errors.js",
+    "./rules/styles": "./rules/styles.js"
+  },
+  "author": "leopoldhub",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leopoldhub/eslint-config-leopoldhub-base.git"
+  },
+  "bugs": {
+    "url": "https://github.com/leopoldhub/eslint-config-leopoldhub-base/issues"
+  },
+  "homepage": "https://github.com/leopoldhub/eslint-config-leopoldhub-base#readme",
+  "devDependencies": {
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.8.1",
+    "prettier-config-leopoldhub": "^1.0.0"
+  }
+}
