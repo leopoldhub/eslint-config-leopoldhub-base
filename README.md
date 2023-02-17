@@ -8,7 +8,7 @@ this configuration is based on the `eslint:recommended` configuration and adds s
 
 ```sh
 npm install --save-dev eslint-config-leopoldhub-base eslint\
-  prettier-config-leopoldhub prettier
+  prettier-config-leopoldhub prettier eslint-config-prettier
 ```
 
 ## Usage
